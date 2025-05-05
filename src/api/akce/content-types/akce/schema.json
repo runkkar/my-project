@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "akces",
+  "info": {
+    "singularName": "akce",
+    "pluralName": "akces",
+    "displayName": "Akce"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nazev": {
+      "type": "string"
+    },
+    "datum": {
+      "type": "date"
+    },
+    "popis": {
+      "type": "text"
+    },
+    "obrazek": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "formular_odkaz": {
+      "type": "string"
+    },
+    "viditelnost": {
+      "type": "boolean"
+    }
+  }
+}

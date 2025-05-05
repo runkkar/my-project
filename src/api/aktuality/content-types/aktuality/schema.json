@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aktualities",
+  "info": {
+    "singularName": "aktuality",
+    "pluralName": "aktualities",
+    "displayName": "Aktuality"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nazev": {
+      "type": "string"
+    },
+    "obsah": {
+      "type": "text"
+    },
+    "datum_vydani": {
+      "type": "date"
+    },
+    "obrazek": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
